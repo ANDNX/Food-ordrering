@@ -1,0 +1,14 @@
+{
+  "name": "food-ordering-p2p",
+  "version": "1.0.0",
+  "description": "Food ordering website with geo-indexing and P2P data sharing",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 
